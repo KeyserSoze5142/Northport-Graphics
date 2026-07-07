@@ -3,62 +3,644 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Northport Graphics | Custom Signs, Banners &amp; Vehicle Wraps in Northport, AL</title>
-  <meta name="description" content="Northport Graphics is a family-owned sign shop in Northport, Alabama with 30+ years of experience. Custom signs, banners, and commercial vehicle wraps for businesses in Tuscaloosa County. Call 205-331-1551 for a free quote.">
-  <meta name="keywords" content="signs Northport AL, custom signs Tuscaloosa, vehicle wraps Alabama, banners Northport, sign shop near me, commercial vehicle graphics">
-  <link rel="canonical" href="https://www.northportgraphics.com/">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Northport Graphics | Custom Signs, Banners &amp; Vehicle Wraps">
-  <meta property="og:description" content="Family-owned sign shop in Northport, AL with 30+ years of experience. Free quotes on signs, banners &amp; vehicle wraps.">
-  <meta property="og:url" content="https://www.northportgraphics.com/">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Northport Graphics">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Northport Graphics | Custom Signs, Banners &amp; Vehicle Wraps">
-  <meta name="twitter:description" content="Family-owned sign shop in Northport, AL with 30+ years of experience.">
-  <!-- Fonts -->
+  <title>Northport Graphics — Website Preview</title>
+  <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.northportgraphics.com/#business",
-    "name": "Northport Graphics",
-    "description": "Family-owned printing and signage shop offering custom signs, banners, and commercial vehicle wraps in Northport, Alabama.",
-    "url": "https://www.northportgraphics.com/",
-    "telephone": "+1-205-331-1551",
-    "email": "info@northportgraphics.com",
-    "founder": { "@type": "Person", "name": "Brett Booth" },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1101 30th Avenue",
-      "addressLocality": "Northport",
-      "addressRegion": "AL",
-      "addressCountry": "US"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 33.2290, "longitude": -87.5772 },
-    "areaServed": ["Northport AL", "Tuscaloosa AL", "Tuscaloosa County"],
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/PrintWorksonMain/",
-      "https://www.instagram.com/northport_graphics/"
-    ],
-    "makesOffer": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Signs" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Banners" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Vehicle Wraps" } }
-    ]
+  <style>
+/* ==========================================================
+   Northport Graphics — Site Stylesheet
+   ========================================================== */
+:root {
+  --navy: #16243d;
+  --navy-light: #1f3357;
+  --orange: #0e9594;
+  --orange-dark: #0a7473;
+  --off-white: #f7f8fa;
+  --gray: #5b6470;
+  --light-gray: #e4e7ec;
+  --white: #ffffff;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(22, 36, 61, 0.10);
+  --shadow-lg: 0 12px 40px rgba(22, 36, 61, 0.16);
+  --font-head: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Barlow', 'Segoe UI', Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+img { max-width: 100%; display: block; }
+
+.container { width: min(1160px, 92%); margin: 0 auto; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); }
+h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+h3 { font-size: 1.4rem; }
+
+p { color: var(--gray); }
+
+a { color: var(--orange); text-decoration: none; }
+a:hover { color: var(--orange-dark); }
+
+section { padding: 72px 0; }
+
+.section-label {
+  display: inline-block;
+  color: var(--orange);
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.section-title { margin-bottom: 16px; color: var(--navy); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.btn-primary { background: var(--orange); color: var(--white); }
+.btn-primary:hover { background: var(--orange-dark); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn-outline { border-color: var(--white); color: var(--white); background: transparent; }
+.btn-outline:hover { background: var(--white); color: var(--navy); }
+.btn-outline-dark { border-color: var(--navy); color: var(--navy); background: transparent; }
+.btn-outline-dark:hover { background: var(--navy); color: var(--white); }
+
+/* ---------- Top bar ---------- */
+.top-bar {
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.88rem;
+  padding: 7px 0;
+}
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.top-bar a { color: var(--white); opacity: 0.9; }
+.top-bar a:hover { opacity: 1; color: var(--orange); }
+.top-bar-contact { display: flex; gap: 22px; flex-wrap: wrap; }
+.top-bar-social { display: flex; gap: 14px; align-items: center; }
+.top-bar-social svg { width: 16px; height: 16px; fill: currentColor; vertical-align: middle; }
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 12px rgba(22, 36, 61, 0.08);
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.logo {
+  font-family: var(--font-head);
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--navy);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo:hover { color: var(--navy); }
+.logo .logo-mark {
+  background: var(--orange);
+  color: var(--white);
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.logo span.accent { color: var(--orange); }
+.logo small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.main-nav ul { list-style: none; display: flex; gap: 6px; align-items: center; }
+.main-nav a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--navy);
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+.main-nav a:hover { color: var(--orange); background: var(--off-white); }
+.main-nav a.active { color: var(--orange); }
+.main-nav .nav-cta { background: var(--orange); color: var(--white); margin-left: 10px; }
+.main-nav .nav-cta:hover { background: var(--orange-dark); }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--navy);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(120deg, var(--navy) 0%, var(--navy-light) 60%, #2a4370 100%);
+  color: var(--white);
+  padding: 96px 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -80px;
+  width: 480px;
+  height: 480px;
+  background: var(--orange);
+  opacity: 0.12;
+  border-radius: 50%;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  right: 60px;
+  bottom: -160px;
+  width: 320px;
+  height: 320px;
+  background: var(--orange);
+  opacity: 0.08;
+  border-radius: 50%;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero h1 { color: var(--white); max-width: 720px; margin-bottom: 20px; }
+.hero h1 .accent { color: var(--orange); }
+.hero p { color: rgba(255,255,255,0.85); font-size: 1.25rem; max-width: 620px; margin-bottom: 34px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-badges { display: flex; gap: 30px; margin-top: 48px; flex-wrap: wrap; }
+.hero-badge { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: rgba(255,255,255,0.9); }
+.hero-badge svg { width: 22px; height: 22px; fill: var(--orange); flex-shrink: 0; }
+
+/* Page hero (interior pages) */
+.page-hero {
+  background: linear-gradient(120deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: var(--white);
+  padding: 64px 0;
+}
+.page-hero h1 { color: var(--white); margin-bottom: 10px; }
+.page-hero p { color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 640px; }
+.breadcrumb { font-size: 0.9rem; margin-bottom: 14px; color: rgba(255,255,255,0.7); }
+.breadcrumb a { color: var(--orange); }
+
+/* ---------- Service cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.card-visual {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card-visual svg { width: 84px; height: 84px; }
+.card-body { padding: 26px 28px 30px; flex: 1; display: flex; flex-direction: column; }
+.card-body h3 { margin-bottom: 10px; }
+.card-body p { flex: 1; margin-bottom: 18px; font-size: 0.98rem; }
+.card-link {
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1.05rem;
+}
+.card-link::after { content: " →"; }
+
+/* ---------- Feature strip / why us ---------- */
+.strip { background: var(--off-white); }
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.feature {
+  text-align: center;
+  padding: 34px 24px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.feature .icon-wrap {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 18px;
+  background: rgba(14, 149, 148, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature svg { width: 34px; height: 34px; fill: var(--orange); }
+.feature h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.feature p { font-size: 0.95rem; }
+
+/* ---------- CTA band ---------- */
+.cta-band {
+  background: var(--orange);
+  color: var(--white);
+  text-align: center;
+  padding: 64px 0;
+}
+.cta-band h2 { color: var(--white); margin-bottom: 12px; }
+.cta-band p { color: rgba(255,255,255,0.92); font-size: 1.15rem; margin-bottom: 28px; }
+.cta-band .btn { background: var(--white); color: var(--orange); }
+.cta-band .btn:hover { background: var(--navy); color: var(--white); }
+.cta-band a.phone-link { color: var(--white); font-weight: 700; text-decoration: underline; }
+
+/* ---------- Testimonials ---------- */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.testimonial {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--orange);
+}
+.testimonial .stars { color: var(--orange); font-size: 1.2rem; letter-spacing: 3px; margin-bottom: 12px; }
+.testimonial blockquote { font-style: italic; color: var(--gray); margin-bottom: 16px; }
+.testimonial cite { font-style: normal; font-weight: 700; color: var(--navy); font-family: var(--font-head); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* ---------- Process steps ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 28px;
+  margin-top: 40px;
+  counter-reset: step;
+}
+.step { position: relative; padding: 28px 24px 24px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); }
+.step::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-head);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: rgba(14, 149, 148, 0.25);
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.step h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.step p { font-size: 0.94rem; }
+
+/* ---------- Gallery ---------- */
+.gallery-filters { display: flex; gap: 10px; flex-wrap: wrap; margin: 34px 0 26px; }
+.filter-btn {
+  padding: 9px 22px;
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+  border-radius: 30px;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover, .filter-btn.active { border-color: var(--orange); background: var(--orange); color: var(--white); }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 22px;
+}
+.gallery-item {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+.gallery-item:hover { transform: scale(1.02); box-shadow: var(--shadow-lg); }
+.gallery-item.hidden { display: none; }
+.gallery-item svg { width: 100%; height: 100%; }
+.gallery-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(transparent, rgba(22,36,61,0.88));
+  color: var(--white);
+  padding: 30px 18px 14px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 36, 61, 0.92);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 4vw;
+}
+.lightbox.open { display: flex; }
+.lightbox-content { max-width: 860px; width: 100%; background: var(--white); border-radius: var(--radius); overflow: hidden; position: relative; }
+.lightbox-content svg { width: 100%; height: auto; }
+.lightbox-caption { padding: 18px 24px; font-family: var(--font-head); font-size: 1.3rem; font-weight: 700; text-transform: uppercase; }
+.lightbox-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 40px; height: 40px;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.lightbox-close:hover { background: var(--orange); }
+
+/* ---------- FAQ accordion ---------- */
+.faq-list { max-width: 820px; margin: 40px auto 0; }
+.faq-item { border: 1px solid var(--light-gray); border-radius: var(--radius); margin-bottom: 14px; background: var(--white); overflow: hidden; }
+.faq-q {
+  width: 100%;
+  text-align: left;
+  padding: 20px 56px 20px 24px;
+  background: none;
+  border: none;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--navy);
+  cursor: pointer;
+  position: relative;
+}
+.faq-q::after {
+  content: "+";
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: var(--orange);
+  transition: transform 0.25s ease;
+}
+.faq-item.open .faq-q::after { transform: translateY(-50%) rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-a p { padding: 0 24px 22px; }
+
+/* ---------- Forms ---------- */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label {
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+.form-group label .req { color: var(--orange); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 13px 15px;
+  border: 2px solid var(--light-gray);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--navy);
+  background: var(--white);
+  transition: border-color 0.2s ease;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { outline: none; border-color: var(--orange); }
+.form-group .error-msg { color: #c62828; font-size: 0.85rem; margin-top: 5px; display: none; }
+.form-group.invalid input,
+.form-group.invalid select,
+.form-group.invalid textarea { border-color: #c62828; }
+.form-group.invalid .error-msg { display: block; }
+.form-success {
+  display: none;
+  background: #e6f4ea;
+  border: 2px solid #34a853;
+  color: #1e7e34;
+  border-radius: var(--radius);
+  padding: 22px 26px;
+  margin-top: 22px;
+  font-weight: 600;
+}
+.form-success.visible { display: block; }
+
+/* ---------- Contact info ---------- */
+.contact-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; margin-top: 40px; }
+.info-block { display: flex; gap: 16px; margin-bottom: 26px; }
+.info-block svg { width: 26px; height: 26px; fill: var(--orange); flex-shrink: 0; margin-top: 3px; }
+.info-block h3 { font-size: 1.15rem; margin-bottom: 4px; }
+.info-block p, .info-block a { font-size: 1rem; }
+.map-embed { border: 0; width: 100%; height: 300px; border-radius: var(--radius); box-shadow: var(--shadow); margin-top: 10px; }
+
+/* ---------- About ---------- */
+.about-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+.about-visual {
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  border-radius: var(--radius);
+  padding: 48px 40px;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+.about-visual .big-stat { font-family: var(--font-head); font-size: 4.5rem; font-weight: 700; color: var(--orange); line-height: 1; }
+.about-visual .stat-label { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+.stat-row { display: flex; gap: 40px; margin-top: 34px; flex-wrap: wrap; }
+.stat-row .mini-stat { font-family: var(--font-head); font-size: 2.1rem; font-weight: 700; color: var(--white); line-height: 1.1; }
+.stat-row .mini-label { font-size: 0.85rem; color: rgba(255,255,255,0.75); text-transform: uppercase; letter-spacing: 0.08em; }
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 26px; margin-top: 40px; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--navy); color: rgba(255,255,255,0.8); padding: 64px 0 0; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+.site-footer h4 {
+  color: var(--white);
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+.site-footer ul { list-style: none; }
+.site-footer li { margin-bottom: 10px; }
+.site-footer a { color: rgba(255,255,255,0.8); }
+.site-footer a:hover { color: var(--orange); }
+.footer-about p { font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 12px; }
+.footer-social { display: flex; gap: 12px; margin-top: 18px; }
+.footer-social a {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.footer-social a:hover { background: var(--orange); }
+.footer-social svg { width: 20px; height: 20px; fill: var(--white); }
+.footer-contact li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.95rem; }
+.footer-contact svg { width: 18px; height: 18px; fill: var(--orange); flex-shrink: 0; margin-top: 4px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ---------- Scroll animations ---------- */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in-view { opacity: 1; transform: none; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .contact-layout, .about-layout { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
-  </script>
+  .main-nav.open { max-height: 480px; }
+  .main-nav ul { flex-direction: column; align-items: stretch; padding: 12px 5%; gap: 2px; }
+  .main-nav .nav-cta { margin: 8px 0 4px; text-align: center; }
+  .form-grid { grid-template-columns: 1fr; }
+  .top-bar .container { justify-content: center; }
+  section { padding: 52px 0; }
+  .hero { padding: 64px 0; }
+}
+
+@media (max-width: 520px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .top-bar-contact a[href^="mailto"] { display: none; }
+  .top-bar { font-size: 0.82rem; }
+}
+
+
+.page{display:none}
+.page.current{display:block}
+
+  </style>
 </head>
 <body>
-
   <!-- Top bar -->
   <div class="top-bar">
     <div class="container">
@@ -81,7 +663,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo" aria-label="Northport Graphics home">
+      <a href="#home" class="logo" aria-label="Northport Graphics home">
         <span class="logo-mark">N</span>
         <span>Northport <span class="accent">Graphics</span><small>Signs &middot; Banners &middot; Wraps</small></span>
       </a>
@@ -90,26 +672,29 @@
       </button>
       <nav class="main-nav" aria-label="Main navigation">
         <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html#quote" class="nav-cta">Get a Free Quote</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav-cta">Get a Free Quote</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+
   <main>
+
+<div class="page current" id="pg-home">
     <!-- Hero -->
     <section class="hero">
       <div class="container">
         <h1>Signs, Banners &amp; Vehicle Wraps That <span class="accent">Get You Noticed</span></h1>
         <p>Northport Graphics is a family-owned sign shop serving Northport, Tuscaloosa, and West Alabama for over 30 years. Professional quality, local service, and craftsmanship you can trust.</p>
         <div class="hero-actions">
-          <a href="contact.html#quote" class="btn btn-primary">Get a Free Quote</a>
-          <a href="gallery.html" class="btn btn-outline">See Our Work</a>
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+          <a href="#gallery" class="btn btn-outline">See Our Work</a>
         </div>
         <div class="hero-badges">
           <div class="hero-badge">
@@ -142,7 +727,7 @@
             <div class="card-body">
               <h3>Custom Signs</h3>
               <p>Storefront signs, dimensional letters, yard signs, real estate signs, and more — designed and built to make your business impossible to miss.</p>
-              <a href="services.html#signs" class="card-link">Explore Signs</a>
+              <a href="#services" class="card-link">Explore Signs</a>
             </div>
           </article>
           <article class="card reveal">
@@ -152,7 +737,7 @@
             <div class="card-body">
               <h3>Banners</h3>
               <p>Vinyl banners for grand openings, events, sales, and promotions. Durable materials, vibrant full-color printing, indoor or outdoor.</p>
-              <a href="services.html#banners" class="card-link">Explore Banners</a>
+              <a href="#services" class="card-link">Explore Banners</a>
             </div>
           </article>
           <article class="card reveal">
@@ -162,7 +747,7 @@
             <div class="card-body">
               <h3>Vehicle Wraps</h3>
               <p>Turn your work trucks and fleet vehicles into moving billboards with commercial vehicle wraps and graphics that advertise 24/7.</p>
-              <a href="services.html#vehicle-wraps" class="card-link">Explore Wraps</a>
+              <a href="#services" class="card-link">Explore Wraps</a>
             </div>
           </article>
         </div>
@@ -255,9 +840,463 @@
       <div class="container">
         <h2>Ready to Stand Out?</h2>
         <p>Get a free, no-obligation quote on your next sign, banner, or vehicle wrap. Or call us at <a class="phone-link" href="tel:+12053311551">205-331-1551</a>.</p>
-        <a href="contact.html#quote" class="btn">Request Your Free Quote</a>
+        <a href="#contact" class="btn">Request Your Free Quote</a>
       </div>
     </section>
+  
+</div>
+
+<div class="page" id="pg-services">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="#home">Home</a> / Services</nav>
+        <h1>Our Services</h1>
+        <p>Professional signs, banners, and commercial vehicle wraps — designed, printed, and installed by a family shop with 30+ years of experience.</p>
+      </div>
+    </section>
+
+    <!-- Custom Signs -->
+    <section id="signs">
+      <div class="container">
+        <span class="section-label">Service 01</span>
+        <h2 class="section-title">Custom Signs</h2>
+        <div class="about-layout">
+          <div>
+            <p>Your sign is often the first impression a customer gets of your business. We build custom signage that makes that impression count — crafted with premium materials and designed to fit your brand, your building, and your budget.</p>
+            <br>
+            <p><strong>Popular sign projects include:</strong> storefront and building signs, dimensional and channel letters, lighted signs, yard and site signs, real estate signs, directional and wayfinding signage, window graphics and lettering, A-frames and sidewalk signs, trade show displays, and ADA-compliant interior signage.</p>
+            <br>
+            <p>Every sign starts with a free consultation and quote. We'll help you choose the right materials for indoor or outdoor use, handle permitting questions, and install it professionally.</p>
+            <br>
+            <a href="#contact" class="btn btn-primary">Get a Sign Quote</a>
+          </div>
+          <div class="card-visual reveal" style="background:linear-gradient(135deg,#16243d,#2a4370);border-radius:10px;height:320px;box-shadow:var(--shadow-lg);">
+            <svg viewBox="0 0 24 24" fill="#0e9594" style="width:120px;height:120px;"><path d="M21 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V5h18v10z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banners -->
+    <section id="banners" class="strip">
+      <div class="container">
+        <span class="section-label">Service 02</span>
+        <h2 class="section-title">Banners</h2>
+        <div class="about-layout">
+          <div class="card-visual reveal" style="background:linear-gradient(135deg,#0e9594,#0a7473);border-radius:10px;height:320px;box-shadow:var(--shadow-lg);">
+            <svg viewBox="0 0 24 24" fill="#ffffff" style="width:120px;height:120px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h12v2H6v-2z"/></svg>
+          </div>
+          <div>
+            <p>Need to announce a grand opening, promote a sale, or dress up an event? Full-color vinyl banners are the fastest, most affordable way to get a big message in front of a lot of people.</p>
+            <br>
+            <p><strong>We produce:</strong> outdoor vinyl banners, indoor display banners, retractable banner stands, mesh banners for windy locations, pole banners, event and sports team banners, and banners with grommets, hems, or pole pockets for any mounting need.</p>
+            <br>
+            <p>Our banners are printed at high resolution on durable material that stands up to Alabama weather — vivid color that stays vivid.</p>
+            <br>
+            <a href="#contact" class="btn btn-primary">Get a Banner Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vehicle Wraps -->
+    <section id="vehicle-wraps">
+      <div class="container">
+        <span class="section-label">Service 03</span>
+        <h2 class="section-title">Commercial Vehicle Wraps</h2>
+        <div class="about-layout">
+          <div>
+            <p>A wrapped vehicle is a billboard that works everywhere you drive. Studies consistently rank vehicle wraps among the most cost-effective advertising available — one wrap can generate tens of thousands of impressions per day.</p>
+            <br>
+            <p><strong>Wrap options include:</strong> full wraps, partial wraps, cut vinyl lettering and decals, fleet graphics with consistent branding across every vehicle, trailer wraps, and magnetic signs for temporary use.</p>
+            <br>
+            <p>We design around your vehicle's body lines, print on premium cast vinyl, and install in-house for a smooth, professional finish that protects your paint and lasts for years.</p>
+            <br>
+            <a href="#contact" class="btn btn-primary">Get a Wrap Quote</a>
+          </div>
+          <div class="card-visual reveal" style="background:linear-gradient(135deg,#1f3357,#16243d);border-radius:10px;height:320px;box-shadow:var(--shadow-lg);">
+            <svg viewBox="0 0 24 24" fill="#0e9594" style="width:120px;height:120px;"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="strip" id="faq">
+      <div class="container">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How much does a custom sign cost?</button>
+            <div class="faq-a"><p>Pricing depends on size, materials, and installation needs. Every project is quoted individually — and quotes are always free. Call <a href="tel:+12053311551">205-331-1551</a> or use our quote form for an exact price.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How long does a vehicle wrap take?</button>
+            <div class="faq-a"><p>Most commercial wraps take 3–5 business days from approved design to finished installation, depending on vehicle size and coverage.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Do you install signs, or just make them?</button>
+            <div class="faq-a"><p>Both. We design, produce, and professionally install signs, banners, and vehicle graphics throughout Northport, Tuscaloosa, and surrounding West Alabama communities.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can you design my sign or wrap for me?</button>
+            <div class="faq-a"><p>Yes. We handle design in-house and send you a proof for approval before anything goes to production. You can also supply your own print-ready artwork.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What areas do you serve?</button>
+            <div class="faq-a"><p>We serve Northport, Tuscaloosa, and all of West Alabama — individuals, small businesses, and commercial fleets.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Let's Build Something That Gets Noticed</h2>
+        <p>Free quotes on every project. Call <a class="phone-link" href="tel:+12053311551">205-331-1551</a> or request online.</p>
+        <a href="#contact" class="btn">Request Your Free Quote</a>
+      </div>
+    </section>
+  
+</div>
+
+<div class="page" id="pg-gallery">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="#home">Home</a> / Gallery</nav>
+        <h1>Project Gallery</h1>
+        <p>A sample of the signs, banners, and vehicle wraps we've produced for businesses across Northport and Tuscaloosa. Placeholder tiles below will be replaced with project photos.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="signs">Signs</button>
+          <button class="filter-btn" data-filter="banners">Banners</button>
+          <button class="filter-btn" data-filter="wraps">Vehicle Wraps</button>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal" data-category="signs">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Storefront Sign — Downtown Northport">
+              <defs><linearGradient id="g62655" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#16243d"/><stop offset="1" stop-color="#2a4370"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g62655)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M21 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V5h18v10z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Storefront Sign — Downtown Northport</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="wraps">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Full Truck Wrap — Local HVAC Company">
+              <defs><linearGradient id="g59513" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0a7473"/><stop offset="1" stop-color="#0e9594"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g59513)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Full Truck Wrap — Local HVAC Company</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="banners">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grand Opening Banner — Retail Store">
+              <defs><linearGradient id="g52397" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1f3357"/><stop offset="1" stop-color="#16243d"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g52397)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h12v2H6v-2z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Grand Opening Banner — Retail Store</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="signs">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Dimensional Letters — Office Building">
+              <defs><linearGradient id="g53315" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2a4370"/><stop offset="1" stop-color="#1f3357"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g53315)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M21 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V5h18v10z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Dimensional Letters — Office Building</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="wraps">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fleet Graphics — Service Vans">
+              <defs><linearGradient id="g27691" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#16243d"/><stop offset="1" stop-color="#0a7473"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g27691)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Fleet Graphics — Service Vans</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="banners">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Event Banner — Community Festival">
+              <defs><linearGradient id="g31564" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0e9594"/><stop offset="1" stop-color="#0a7473"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g31564)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h12v2H6v-2z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Event Banner — Community Festival</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="signs">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lighted Sign — Restaurant">
+              <defs><linearGradient id="g84877" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1f3357"/><stop offset="1" stop-color="#2a4370"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g84877)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M21 3H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H3V5h18v10z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Lighted Sign — Restaurant</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="wraps">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Partial Wrap — Pickup Truck">
+              <defs><linearGradient id="g14913" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2a4370"/><stop offset="1" stop-color="#0e9594"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g14913)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Partial Wrap — Pickup Truck</figcaption>
+          </figure>
+          <figure class="gallery-item reveal" data-category="banners">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Team Banner — Local Sports League">
+              <defs><linearGradient id="g42638" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#16243d"/><stop offset="1" stop-color="#1f3357"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#g42638)"/>
+              <g transform="translate(160,90)" fill="rgba(255,255,255,0.85)"><path transform="scale(3.3)" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h12v2H6v-2z"/></g>
+              <text x="200" y="240" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="Arial" font-size="13">Photo coming soon</text>
+            </svg>
+            <figcaption class="gallery-caption">Team Banner — Local Sports League</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close">&#10005;</button>
+        <div class="lightbox-visual"></div>
+        <div class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Want Your Project Featured Next?</h2>
+        <p>Every project here started with a free quote. Call <a class="phone-link" href="tel:+12053311551">205-331-1551</a>.</p>
+        <a href="#contact" class="btn">Start Your Project</a>
+      </div>
+    </section>
+  
+</div>
+
+<div class="page" id="pg-about">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="#home">Home</a> / About</nav>
+        <h1>About Northport Graphics</h1>
+        <p>A family tradition of craftsmanship, serving West Alabama for more than three decades.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="about-layout">
+          <div>
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">Family Owned. Locally Rooted.</h2>
+            <p>Northport Graphics is owned and operated by Brett Booth, whose family has been in the printing and signage business for over 30 years. What started as a family trade has grown into one of West Alabama's most trusted local shops for signs, banners, and commercial vehicle graphics.</p>
+            <br>
+            <p>We're not a print-by-mail warehouse. When you work with Northport Graphics, you're working directly with the people who design, produce, and install your project. That means real conversations, honest advice, and work we're proud to put our name on.</p>
+            <br>
+            <p>From a single yard sign to a fully wrapped fleet, we treat every job with the same care — because around here, our reputation is everything.</p>
+            <br>
+            <a href="#contact" class="btn btn-primary">Come Say Hello</a>
+          </div>
+          <div class="about-visual reveal">
+            <div class="big-stat">30+</div>
+            <div class="stat-label">Years of Family Craftsmanship</div>
+            <div class="stat-row">
+              <div>
+                <div class="mini-stat">100%</div>
+                <div class="mini-label">Locally Owned</div>
+              </div>
+              <div>
+                <div class="mini-stat">Free</div>
+                <div class="mini-label">Quotes, Always</div>
+              </div>
+              <div>
+                <div class="mini-stat">1</div>
+                <div class="mini-label">Call Away</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container">
+        <span class="section-label">What We Stand For</span>
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+          <div class="feature reveal">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="#0e9594"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z"/></svg></div>
+            <h3>Quality First</h3>
+            <p>Premium materials, precise production, and clean installation. If it isn't right, it doesn't leave the shop.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="#0e9594"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+            <h3>Straight Talk</h3>
+            <p>Honest pricing, realistic timelines, and advice that puts your goals ahead of an upsell.</p>
+          </div>
+          <div class="feature reveal">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="#0e9594"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div>
+            <h3>Community Minded</h3>
+            <p>We live here, work here, and root for the same local businesses we serve. Your success is our success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <span class="section-label">Who We Serve</span>
+        <h2 class="section-title">Businesses &amp; Individuals Across West Alabama</h2>
+        <p style="max-width:720px;">Our customers range from new startups ordering their first storefront sign to established companies branding entire vehicle fleets. Retail shops, restaurants, contractors, real estate agents, churches, schools, event organizers — if you need to be seen, we can help. We proudly serve Northport, Tuscaloosa, and the surrounding communities.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Work With a Shop That Cares</h2>
+        <p>Talk directly with the people who'll build your project. Call <a class="phone-link" href="tel:+12053311551">205-331-1551</a> today.</p>
+        <a href="#contact" class="btn">Get Your Free Quote</a>
+      </div>
+    </section>
+  
+</div>
+
+<div class="page" id="pg-contact">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="#home">Home</a> / Contact</nav>
+        <h1>Contact Us</h1>
+        <p>Get a free quote, ask a question, or stop by the shop. We'd love to hear about your project.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Quote form -->
+          <div id="quote">
+            <span class="section-label">Free Quote</span>
+            <h2 class="section-title">Request a Quote</h2>
+            <p style="margin-bottom:26px;">Tell us about your project and we'll get back to you with pricing and options — usually within one business day.</p>
+            <form id="quote-form" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Name <span class="req">*</span></label>
+                  <input type="text" id="name" name="name" required autocomplete="name">
+                  <span class="error-msg">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone <span class="req">*</span></label>
+                  <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                  <span class="error-msg">Please enter a valid phone number.</span>
+                </div>
+                <div class="form-group full">
+                  <label for="email">Email <span class="req">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                  <span class="error-msg">Please enter a valid email address.</span>
+                </div>
+                <div class="form-group full">
+                  <label for="service">What do you need? <span class="req">*</span></label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service...</option>
+                    <option>Custom Signs</option>
+                    <option>Banners</option>
+                    <option>Vehicle Wrap / Graphics</option>
+                    <option>Fleet Graphics</option>
+                    <option>Something Else</option>
+                  </select>
+                  <span class="error-msg">Please select a service.</span>
+                </div>
+                <div class="form-group full">
+                  <label for="message">Project details <span class="req">*</span></label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Size, quantity, timeline, and anything else we should know..."></textarea>
+                  <span class="error-msg">Please tell us a little about your project.</span>
+                </div>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Send Quote Request</button>
+              <div class="form-success" role="status">Thanks! Your email app should have opened with your request ready to send. If it didn't, email us directly at info@northportgraphics.com or call 205-331-1551.</div>
+            </form>
+          </div>
+
+          <!-- Contact info -->
+          <div>
+            <span class="section-label">Visit or Call</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              <div>
+                <h3>Address</h3>
+                <p>1101 30th Avenue<br>Northport, AL</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+12053311551">205-331-1551</a></p>
+              </div>
+            </div>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@northportgraphics.com">info@northportgraphics.com</a></p>
+              </div>
+            </div>
+            <div class="info-block">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <div>
+                <h3>Hours</h3>
+                <p>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday &amp; Sunday: Closed</p>
+              </div>
+            </div>
+            <h3 style="margin:24px 0 8px;">Find Us</h3>
+            <iframe class="map-embed" title="Map to Northport Graphics, 1101 30th Avenue, Northport AL"
+              src="https://www.google.com/maps?q=1101+30th+Avenue,+Northport,+AL&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Prefer to Talk?</h2>
+        <p>Call us at <a class="phone-link" href="tel:+12053311551">205-331-1551</a> — you'll reach a real person who does the work.</p>
+        <a href="tel:+12053311551" class="btn">Call Now</a>
+      </div>
+    </section>
+  
+</div>
+
   </main>
 
   <!-- Footer -->
@@ -279,20 +1318,20 @@
         <div>
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
-            <li><a href="services.html#signs">Custom Signs</a></li>
-            <li><a href="services.html#banners">Banners</a></li>
-            <li><a href="services.html#vehicle-wraps">Vehicle Wraps</a></li>
-            <li><a href="contact.html#quote">Free Quotes</a></li>
+            <li><a href="#services">Custom Signs</a></li>
+            <li><a href="#services">Banners</a></li>
+            <li><a href="#services">Vehicle Wraps</a></li>
+            <li><a href="#contact">Free Quotes</a></li>
           </ul>
         </div>
         <div>
@@ -311,6 +1350,179 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+
+  <script>
+/* Northport Graphics — site scripts */
+(function () {
+  'use strict';
+
+  /* ----- Mobile nav toggle ----- */
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* ----- Scroll reveal animations ----- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+  }
+
+  /* ----- FAQ accordion ----- */
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var answer = item.querySelector('.faq-a');
+      var isOpen = item.classList.contains('open');
+      // close others
+      document.querySelectorAll('.faq-item.open').forEach(function (other) {
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+        other.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ----- Gallery filtering ----- */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var galleryItems = document.querySelectorAll('.gallery-item');
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-filter');
+      galleryItems.forEach(function (item) {
+        var show = cat === 'all' || item.getAttribute('data-category') === cat;
+        item.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  /* ----- Gallery lightbox ----- */
+  var lightbox = document.querySelector('.lightbox');
+  if (lightbox && galleryItems.length) {
+    var lbContent = lightbox.querySelector('.lightbox-visual');
+    var lbCaption = lightbox.querySelector('.lightbox-caption');
+    galleryItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        var svg = item.querySelector('svg');
+        var caption = item.querySelector('.gallery-caption');
+        if (svg) { lbContent.innerHTML = svg.outerHTML; }
+        if (caption) { lbCaption.textContent = caption.textContent; }
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) { closeLightbox(); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { closeLightbox(); }
+    });
+  }
+
+  /* ----- Quote / contact form validation ----- */
+  var form = document.getElementById('quote-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var valid = true;
+      form.querySelectorAll('[required]').forEach(function (field) {
+        var group = field.closest('.form-group');
+        var ok = field.value.trim() !== '';
+        if (ok && field.type === 'email') {
+          ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+        }
+        if (ok && field.type === 'tel') {
+          ok = /^[\d\s\-\(\)\+\.]{7,}$/.test(field.value.trim());
+        }
+        group.classList.toggle('invalid', !ok);
+        if (!ok) { valid = false; }
+      });
+      if (!valid) { return; }
+
+      /* No backend configured yet — build a mailto: fallback so
+         inquiries reach the shop from day one. Swap this for a form
+         service (Formspree, Netlify Forms, etc.) when hosting is set up. */
+      var name = (form.querySelector('#name') || {}).value || '';
+      var email = (form.querySelector('#email') || {}).value || '';
+      var phone = (form.querySelector('#phone') || {}).value || '';
+      var service = (form.querySelector('#service') || {}).value || '';
+      var message = (form.querySelector('#message') || {}).value || '';
+      var subject = encodeURIComponent('Quote Request — ' + (service || 'General') + ' — ' + name);
+      var body = encodeURIComponent(
+        'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone +
+        '\nService: ' + service + '\n\nProject details:\n' + message
+      );
+      window.location.href = 'mailto:info@northportgraphics.com?subject=' + subject + '&body=' + body;
+
+      var success = document.querySelector('.form-success');
+      if (success) {
+        success.classList.add('visible');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      form.reset();
+    });
+
+    /* clear error state on input */
+    form.querySelectorAll('input, select, textarea').forEach(function (field) {
+      field.addEventListener('input', function () {
+        field.closest('.form-group').classList.remove('invalid');
+      });
+    });
+  }
+
+  /* ----- Footer year ----- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+})();
+
+
+/* --- single-file preview router --- */
+(function(){
+  function show(id){
+    document.querySelectorAll('.page').forEach(function(p){p.classList.remove('current');});
+    var pg = document.getElementById('pg-'+id) || document.getElementById('pg-home');
+    pg.classList.add('current');
+    document.querySelectorAll('.main-nav a').forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href')==='#'+id && !a.classList.contains('nav-cta'));
+    });
+    var nav=document.querySelector('.main-nav'), tog=document.querySelector('.nav-toggle');
+    if(nav){nav.classList.remove('open');} if(tog){tog.classList.remove('open');}
+    window.scrollTo(0,0);
+    /* re-trigger reveal animations inside newly shown page */
+    pg.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in-view');});
+  }
+  window.addEventListener('hashchange', function(){ show(location.hash.replace('#','')||'home'); });
+  if(location.hash){ show(location.hash.replace('#','')); }
+  document.querySelectorAll('.page:not(.current) .reveal').forEach(function(el){el.classList.add('in-view');});
+})();
+
+  </script>
 </body>
 </html>
